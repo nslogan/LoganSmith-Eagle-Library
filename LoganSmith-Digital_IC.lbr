@@ -79,12 +79,15 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -116,10 +119,110 @@
 </layers>
 <library>
 <packages>
+<package name="UMAX-10">
+<smd name="5" x="0" y="0" dx="0.28" dy="1.4" layer="1" rot="R90"/>
+<smd name="4" x="0" y="0.5" dx="0.28" dy="1.4" layer="1" rot="R90"/>
+<smd name="3" x="0" y="1" dx="0.28" dy="1.4" layer="1" rot="R90"/>
+<smd name="2" x="0" y="1.5" dx="0.28" dy="1.4" layer="1" rot="R90"/>
+<smd name="1" x="0" y="2" dx="0.28" dy="1.4" layer="1" rot="R90"/>
+<smd name="6" x="4.28" y="0" dx="0.28" dy="1.4" layer="1" rot="R90"/>
+<smd name="7" x="4.28" y="0.5" dx="0.28" dy="1.4" layer="1" rot="R90"/>
+<smd name="8" x="4.28" y="1" dx="0.28" dy="1.4" layer="1" rot="R90"/>
+<smd name="9" x="4.28" y="1.5" dx="0.28" dy="1.4" layer="1" rot="R90"/>
+<smd name="10" x="4.32" y="2" dx="0.28" dy="1.4" layer="1" rot="R270"/>
+<text x="2.05" y="3.1" size="1" layer="25" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="2.1" y="-1.15" size="1" layer="27" ratio="12" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.4" y1="1.9" x2="0.65" y2="2.1" layer="51"/>
+<rectangle x1="3.65" y1="1.9" x2="4.6" y2="2.1" layer="51"/>
+<rectangle x1="-0.4" y1="1.4" x2="0.65" y2="1.6" layer="51"/>
+<rectangle x1="-0.4" y1="0.9" x2="0.65" y2="1.1" layer="51"/>
+<rectangle x1="-0.4" y1="0.4" x2="0.65" y2="0.6" layer="51"/>
+<rectangle x1="-0.4" y1="-0.1" x2="0.65" y2="0.1" layer="51"/>
+<rectangle x1="3.65" y1="1.4" x2="4.6" y2="1.6" layer="51"/>
+<rectangle x1="3.65" y1="0.9" x2="4.6" y2="1.1" layer="51"/>
+<rectangle x1="3.65" y1="0.4" x2="4.6" y2="0.6" layer="51"/>
+<rectangle x1="3.65" y1="-0.1" x2="4.6" y2="0.1" layer="51"/>
+<wire x1="0.65" y1="-0.5" x2="0.65" y2="2.5" width="0.125" layer="51"/>
+<wire x1="3.65" y1="2.5" x2="3.65" y2="-0.5" width="0.125" layer="51"/>
+<wire x1="0.4" y1="2.3" x2="0.4" y2="2.7" width="0.125" layer="21"/>
+<wire x1="0.4" y1="2.7" x2="3.9" y2="2.7" width="0.125" layer="21"/>
+<wire x1="3.9" y1="2.7" x2="3.9" y2="2.3" width="0.125" layer="21"/>
+<wire x1="0.4" y1="-0.3" x2="0.4" y2="-0.7" width="0.125" layer="21"/>
+<wire x1="0.4" y1="-0.7" x2="3.9" y2="-0.7" width="0.125" layer="21"/>
+<wire x1="3.9" y1="-0.7" x2="3.9" y2="-0.3" width="0.125" layer="21"/>
+<wire x1="0.65" y1="2.5" x2="3.65" y2="2.5" width="0.125" layer="51"/>
+<wire x1="0.65" y1="-0.5" x2="3.65" y2="-0.5" width="0.125" layer="51"/>
+<polygon width="0.125" layer="21">
+<vertex x="-0.2" y="2.5" curve="-90"/>
+<vertex x="-0.1" y="2.6" curve="-90"/>
+<vertex x="0" y="2.5" curve="-90"/>
+<vertex x="-0.1" y="2.4" curve="-90"/>
+</polygon>
+<circle x="1.2" y="2" radius="0.22360625" width="0.125" layer="51"/>
+<text x="2.3" y="2" size="0.6" layer="51" font="vector" rot="SR270">AAAA</text>
+<wire x1="-1" y1="3" x2="-1" y2="-1" width="0.127" layer="39"/>
+<wire x1="-1" y1="-1" x2="5.25" y2="-1" width="0.127" layer="39"/>
+<wire x1="5.25" y1="-1" x2="5.25" y2="3" width="0.127" layer="39"/>
+<wire x1="5.25" y1="3" x2="-1" y2="3" width="0.127" layer="39"/>
+</package>
 </packages>
 <symbols>
+<symbol name="MAX9924">
+<description>Maxim MAX9924</description>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.27" layer="95" rot="R180" align="bottom-right">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="IN+" x="-15.24" y="2.54" length="middle"/>
+<pin name="IN-" x="-15.24" y="0" length="middle"/>
+<pin name="N.C." x="-15.24" y="-2.54" length="middle"/>
+<pin name="BIAS" x="-15.24" y="-5.08" length="middle"/>
+<pin name="GND" x="-15.24" y="-7.62" length="middle"/>
+<wire x1="-10.16" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<pin name="ZERO_EN" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="COUT" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="EXT" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="INT_THRS" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="VCC" x="17.78" y="2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="MAX9924UAUB+" prefix="U">
+<description>&lt;p&gt;Variable-Reluctance Sensor Interface with Differential Input and Adaptive Peak Threshold&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://datasheets.maximintegrated.com/en/ds/MAX9924-MAX9927.pdf"&gt;MAX9924-MAX9927 Datasheet&lt;/a&gt;
+&lt;p&gt;Note: There are technically two versions of this IC: UAUB+ and UAUB/V+. I have not figured out the difference yet which is why the device is currently named UAUB+. If I figure it out, I will create two different technologies for it.&lt;/p&gt;
+&lt;p&gt;Optional attributes to include:
+&lt;ul&gt;
+&lt;li&gt;CURRENT_SUPPLY: 5 mA&lt;/li&gt;
+&lt;li&gt;OUTPUT_TYPE: Logic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX9924" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="UMAX-10">
+<connects>
+<connect gate="G$1" pin="BIAS" pad="4"/>
+<connect gate="G$1" pin="COUT" pad="7"/>
+<connect gate="G$1" pin="EXT" pad="8"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="IN+" pad="1"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="INT_THRS" pad="9"/>
+<connect gate="G$1" pin="N.C." pad="3"/>
+<connect gate="G$1" pin="VCC" pad="10"/>
+<connect gate="G$1" pin="ZERO_EN" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TEMP_RANGE" value="-40C to 125C" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
