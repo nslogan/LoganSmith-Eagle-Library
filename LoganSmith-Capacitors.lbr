@@ -206,7 +206,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C-" prefix="C">
+<deviceset name="C-" prefix="C" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
 </gates>
@@ -249,7 +249,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="0.1UF-*-?">
+<deviceset name="0.1UF-*-?" prefix="C" uservalue="yes">
 <description>0.1uF ceramic capacitors</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
@@ -313,6 +313,7 @@
 <attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
 <attribute name="THICK" value="0.90mm" constant="no"/>
 <attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
 </technology>
 <technology name="25V">
 <attribute name="DIGIKEY_OC" value="1276-1006-1-ND" constant="no"/>
@@ -322,6 +323,7 @@
 <attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
 <attribute name="THICK" value="0.90mm" constant="no"/>
 <attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
 </technology>
 <technology name="50V">
 <attribute name="DIGIKEY_OC" value="1276-1936-1-ND" constant="no"/>
@@ -331,6 +333,168 @@
 <attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
 <attribute name="THICK" value="0.90mm" constant="no"/>
 <attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10UF-*-?" prefix="C">
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0805" package="0805-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="10V">
+<attribute name="DIGIKEY_OC" value="1276-1764-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL21B106KPQNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="1.40mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+<technology name="16V">
+<attribute name="DIGIKEY_OC" value="1276-2872-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL21B106KOQNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="1.40mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+<technology name="6.3V">
+<attribute name="DIGIKEY_OC" value="1276-1113-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL21B106KQQNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="1.40mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1206" package="1206-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="P$3"/>
+<connect gate="G$1" pin="2" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="10V">
+<attribute name="DIGIKEY_OC" value="1276-1311-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL31B106KPHNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="1.80mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+<technology name="16V">
+<attribute name="DIGIKEY_OC" value="1276-1082-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL31B106KOHNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="1.80mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+<technology name="25V">
+<attribute name="DIGIKEY_OC" value="1276-1804-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL31B106KAHNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="1.80mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+<technology name="35V">
+<attribute name="DIGIKEY_OC" value="1276-3103-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL31B106KLHNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="1.80mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+<technology name="6.3V">
+<attribute name="DIGIKEY_OC" value="1276-2748-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL31B106KQHNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="1.80mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1210" package="1210-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="10V">
+<attribute name="DIGIKEY_OC" value="1276-3326-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL32B106KPINNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="2.20mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+<technology name="16V">
+<attribute name="DIGIKEY_OC" value="1276-1150-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL32B106KOJNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="2.70mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+<technology name="25V">
+<attribute name="DIGIKEY_OC" value="1276-1807-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL32B106KAJNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="2.70mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+<technology name="35V">
+<attribute name="DIGIKEY_OC" value="1276-3389-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL32B106KLJNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="2.70mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+<technology name="50V">
+<attribute name="DIGIKEY_OC" value="1276-3387-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics America, Inc" constant="no"/>
+<attribute name="MPN" value="CL32B106KBJNNNE" constant="no"/>
+<attribute name="TEMP_COEFF" value="X7R" constant="no"/>
+<attribute name="TEMP_RANGE" value="-55C to 125C" constant="no"/>
+<attribute name="THICK" value="2.70mm" constant="no"/>
+<attribute name="TOL" value="+/-10%" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
 </technology>
 </technologies>
 </device>

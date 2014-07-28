@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -215,6 +215,27 @@
 <wire x1="3.8" y1="2.8" x2="-3.7" y2="2.8" width="0.125" layer="39"/>
 <wire x1="-3.7" y1="2.8" x2="-3.7" y2="-2.8" width="0.125" layer="39"/>
 </package>
+<package name="10-TDFN-EP">
+<description>&lt;p&gt;Plastic Very Very Thin Dual Flatpack, No Leads&lt;/p&gt;
+&lt;p&gt;Based on Maxim land pattern 90-0247:&lt;br/&gt;
+&lt;a href="http://pdfserv.maximintegrated.com/land_patterns/90-0247.PDF"&gt;Land Pattern&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://pdfserv.maximintegrated.com/package_dwgs/21-0268.PDF"&gt;Package Outline&lt;/a&gt;
+&lt;/p&gt;</description>
+<smd name="5" x="-1.92" y="-1" dx="0.3" dy="0.79" layer="1" rot="R90"/>
+<smd name="4" x="-1.92" y="-0.5" dx="0.3" dy="0.79" layer="1" rot="R90"/>
+<smd name="3" x="-1.92" y="0" dx="0.3" dy="0.79" layer="1" rot="R90"/>
+<smd name="P$4" x="-1.92" y="0.5" dx="0.3" dy="0.79" layer="1" rot="R90"/>
+<smd name="1" x="-1.92" y="1" dx="0.3" dy="0.79" layer="1" rot="R90"/>
+<smd name="6" x="1.92" y="-1" dx="0.3" dy="0.79" layer="1" rot="R90"/>
+<smd name="7" x="1.92" y="-0.5" dx="0.3" dy="0.79" layer="1" rot="R90"/>
+<smd name="8" x="1.92" y="0" dx="0.3" dy="0.79" layer="1" rot="R90"/>
+<smd name="9" x="1.92" y="0.5" dx="0.3" dy="0.79" layer="1" rot="R90"/>
+<smd name="10" x="1.92" y="1" dx="0.3" dy="0.79" layer="1" rot="R90"/>
+<rectangle x1="-1.3" y1="-1.15" x2="1.3" y2="1.15" layer="1"/>
+<circle x="-1.9" y="1.6" radius="0.2" width="0.125" layer="21"/>
+<text x="-2.3" y="-2.6" size="1" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="3.1" y="-1.2" size="0.5" layer="27" font="vector" ratio="12" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MAX9924">
@@ -272,6 +293,27 @@
 <attribute name="MPN" value="MAX9924UAUB+" constant="no"/>
 <attribute name="TEMP_RANGE" value="-40C to 125C" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX3185?*" prefix="U">
+<gates>
+</gates>
+<devices>
+<device name="0" package="10-TDFN-EP">
+<technologies>
+<technology name="E"/>
+<technology name="J"/>
+<technology name="K"/>
+<technology name="N"/>
+<technology name="T"/>
+</technologies>
+</device>
+<device name="1" package="10-TDFN-EP">
+<technologies>
+<technology name="R"/>
+<technology name="S"/>
 </technologies>
 </device>
 </devices>
