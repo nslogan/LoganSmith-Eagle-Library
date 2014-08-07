@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -211,6 +211,102 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="1K-*-?" prefix="R" uservalue="yes">
+<description>10k Resistor, Panasonic</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="1%">
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
+<technology name="5%">
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="0.1W" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0805" package="0805-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="1%">
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="0.125W" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
+<technology name="5%">
+<attribute name="DIGIKEY_OC" value="P1.0KACT-ND" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="ERJ-6GEYJ102V" constant="no"/>
+<attribute name="POWER" value="0.125W" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1206" package="1206-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="P$3"/>
+<connect gate="G$1" pin="2" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="1%">
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="0.25W" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
+<technology name="5%">
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="0.25W" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1210" package="1210-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="1%">
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="0.5W" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
+<technology name="5%">
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POWER" value="0.5W" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="10K-*-?" prefix="R" uservalue="yes">
 <description>10k Resistor, Panasonic</description>
 <gates>
