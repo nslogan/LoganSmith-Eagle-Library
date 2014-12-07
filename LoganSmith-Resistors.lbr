@@ -204,6 +204,25 @@
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.125" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.125" layer="21"/>
 </package>
+<package name="0402-RES">
+<description>&lt;b&gt;0402 Chip Resistor&lt;/b&gt;
+&lt;p&gt;Follows standard set in &lt;a href="http://www.tortai-tech.com/upload/download/2011102023233369053.pdf"&gt;IPC-SM-782&lt;/a&gt;, section 8.1 "Chip Resistors", sub-section 5.0 "Land Pattern Dimensions", Figure 3, RLP 100A.&lt;/p&gt;</description>
+<smd name="P$1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1" rot="R90"/>
+<text x="0" y="0.5" size="1" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.5" size="0.5" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
+<wire x1="-0.1" y1="0.3" x2="0.1" y2="0.3" width="0.125" layer="25"/>
+<wire x1="-0.1" y1="-0.3" x2="0.1" y2="-0.3" width="0.125" layer="25"/>
+<rectangle x1="-0.5" y1="-0.3" x2="-0.35" y2="0.3" layer="51"/>
+<rectangle x1="0.35" y1="-0.3" x2="0.5" y2="0.3" layer="51"/>
+<rectangle x1="-0.4" y1="0.2" x2="0.4" y2="0.3" layer="51"/>
+<rectangle x1="-0.4" y1="-0.3" x2="0.4" y2="-0.2" layer="51"/>
+<wire x1="-1.5" y1="-0.5" x2="-1.5" y2="0.5" width="0.125" layer="39"/>
+<wire x1="-1.5" y1="0.5" x2="1.5" y2="0.5" width="0.125" layer="39"/>
+<wire x1="1.5" y1="0.5" x2="1.5" y2="-0.5" width="0.125" layer="39"/>
+<wire x1="1.5" y1="-0.5" x2="-1.5" y2="-0.5" width="0.125" layer="39"/>
+<rectangle x1="-0.1" y1="-0.2" x2="0.1" y2="0.2" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -555,6 +574,15 @@
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0402" package="0402-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

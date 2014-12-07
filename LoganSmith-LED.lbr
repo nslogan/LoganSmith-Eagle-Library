@@ -232,6 +232,12 @@
 &lt;a href="http://optoelectronics.liteon.com/upload/download/DS22-2000-074/S_110_LTST-C190KGKT.pdf"&gt;0603 Datasheet&lt;/a&gt;&lt;br/&gt;
 &lt;a href="http://optoelectronics.liteon.com/upload/download/DS22-2000-073/S_110_LTST-C170KGKT.pdf"&gt;0805 Datasheet&lt;/a&gt;&lt;br/&gt;
 &lt;a href="http://optoelectronics.liteon.com/upload/download/DS22-2000-072/S_110_LTST-C150KGKT.pdf"&gt;1206 Datasheet&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Blue:&lt;br/&gt;
+&lt;a href="http://optoelectronics.liteon.com/upload/download/DS-22-99-0224/S_110_LTST-C190TBKT(0630).pdf"&gt;0603 Datasheet&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://optoelectronics.liteon.com/upload/download/DS-22-99-0226/S_110_LTST-C170TBKT.pdf"&gt;0805 Datasheet&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://optoelectronics.liteon.com/upload/download/DS22-2000-026/S_110_LTST-C150TBKT(0630).pdf"&gt;1206 Datasheet&lt;/a&gt;
 &lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="2.54"/>
@@ -243,6 +249,15 @@
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
+<technology name="B">
+<attribute name="DESC" value="Clear Blue LED, 0603, 3.4V Vf, 20mA" constant="no"/>
+<attribute name="DIGIKEY_OC" value="160-1646-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MFR" value="Lite-On Inc." constant="no"/>
+<attribute name="MPN" value="LTST-C190TBKT" constant="no"/>
+<attribute name="TEMP" value="-30C to 85C" constant="no"/>
+<attribute name="VALUE" value="BLUE" constant="no"/>
+</technology>
 <technology name="G">
 <attribute name="DESC" value="Clear Green LED, 0603, 2V Vf, 20mA" constant="no"/>
 <attribute name="DIGIKEY_OC" value="160-1435-1-ND" constant="no"/>
@@ -269,6 +284,15 @@
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
+<technology name="B">
+<attribute name="DESC" value="Clear Blue LED, 1206, 3.3V Vf, 20mA" constant="no"/>
+<attribute name="DIGIKEY_OC" value="160-1643-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MFR" value="Lite-On Inc." constant="no"/>
+<attribute name="MPN" value="LTST-C150KBKT" constant="no"/>
+<attribute name="TEMP" value="-30C to 85C" constant="no"/>
+<attribute name="VALUE" value="BLUE" constant="no"/>
+</technology>
 <technology name="G">
 <attribute name="DESC" value="Clear Green LED, 1206, 2V Vf, 20mA" constant="no"/>
 <attribute name="DIGIKEY_OC" value="160-1404-1-ND" constant="no"/>
@@ -295,8 +319,17 @@
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
+<technology name="B">
+<attribute name="DESC" value="Clear Blue LED, 0805, 3.3V Vf, 20mA" constant="no"/>
+<attribute name="DIGIKEY_OC" value="160-1579-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MFR" value="Lite-On Inc." constant="no"/>
+<attribute name="MPN" value="LTST-C170KBKT" constant="no"/>
+<attribute name="TEMP" value="-30C to 85C" constant="no"/>
+<attribute name="VALUE" value="BLUE" constant="no"/>
+</technology>
 <technology name="G">
-<attribute name="DESC" value="Clear Green LED, 1206, 2V Vf, 20mA" constant="no"/>
+<attribute name="DESC" value="Clear Green LED, 0805, 2V Vf, 20mA" constant="no"/>
 <attribute name="DIGIKEY_OC" value="160-1414-1-ND" constant="no"/>
 <attribute name="HEIGHT" value="1.1mm" constant="no"/>
 <attribute name="MFR" value="Lite-On Inc." constant="no"/>
@@ -305,7 +338,7 @@
 <attribute name="VALUE" value="GREEN" constant="no"/>
 </technology>
 <technology name="R">
-<attribute name="DESC" value="Clear Red LED, 1206, 2V Vf, 20mA" constant="no"/>
+<attribute name="DESC" value="Clear Red LED, 0805, 2V Vf, 20mA" constant="no"/>
 <attribute name="DIGIKEY_OC" value="160-1415-1-ND" constant="no"/>
 <attribute name="HEIGHT" value="1.1mm" constant="no"/>
 <attribute name="MFR" value="Lite-On Inc." constant="no"/>
