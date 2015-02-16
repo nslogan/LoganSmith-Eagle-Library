@@ -247,6 +247,31 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="FB-600-100MHZ-?" prefix="FB">
+<description>600@100MHz ferrite bead</description>
+<gates>
+<gate name="G$1" symbol="FB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0805" package="0805-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESC" value="Ferrite chip 600 ohm@100MHz 1.5A" constant="no"/>
+<attribute name="DIGIKEY_OC" value="240-2390-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MFR" value="Laird-Signal Integrity Products" constant="no"/>
+<attribute name="MPN" value="MI0805K601R-10" constant="no"/>
+<attribute name="TEMP" value="" constant="no"/>
+<attribute name="VALUE" value="600@100MHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -63,14 +63,17 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -81,12 +84,28 @@
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
 <layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="yes"/>
 <layer number="109" name="ref-old" color="11" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
@@ -113,13 +132,17 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
-<package name="4-SMD">
+<package name="4-SMD-5X3.2">
+<description>&lt;p&gt;5x3.2 4-SMD, &lt;a href="http://www.txccrystal.com/images/pdf/7b.pdf"&gt;footprint&lt;/a&gt;&lt;/p&gt;</description>
 <smd name="4" x="-1.85" y="1.1" dx="2" dy="1.2" layer="1"/>
 <smd name="3" x="1.85" y="1.1" dx="2" dy="1.2" layer="1"/>
 <smd name="1" x="-1.85" y="-1.1" dx="2" dy="1.2" layer="1"/>
@@ -140,11 +163,183 @@
 <wire x1="0.9" y1="0.5" x2="0.4" y2="0" width="0.125" layer="51"/>
 <text x="-2.8" y="-2" size="1" layer="25" font="vector" ratio="12" align="top-left">&gt;NAME</text>
 <text x="-2.8" y="2" size="1" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+<wire x1="-3.1" y1="1.9" x2="3.1" y2="1.9" width="0.125" layer="39"/>
+<wire x1="3.1" y1="1.9" x2="3.1" y2="-1.9" width="0.125" layer="39"/>
+<wire x1="3.1" y1="-1.9" x2="-3.1" y2="-1.9" width="0.125" layer="39"/>
+<wire x1="-3.1" y1="-1.9" x2="-3.1" y2="1.9" width="0.125" layer="39"/>
+<wire x1="-1.2" y1="1.6" x2="1.2" y2="1.6" width="0.125" layer="51"/>
+<wire x1="2.5" y1="0.7" x2="2.5" y2="-0.7" width="0.125" layer="51"/>
+<wire x1="1.2" y1="-1.6" x2="-1.2" y2="-1.6" width="0.125" layer="51"/>
+<wire x1="-2.5" y1="-0.7" x2="-2.5" y2="0.7" width="0.125" layer="51"/>
+<wire x1="-2.5" y1="0.7" x2="-1.4" y2="0.7" width="0.125" layer="51"/>
+<wire x1="-1.4" y1="0.7" x2="-1.2" y2="0.9" width="0.125" layer="51"/>
+<wire x1="-1.2" y1="0.9" x2="-1.2" y2="1.6" width="0.125" layer="51"/>
+<wire x1="1.2" y1="1.6" x2="1.2" y2="0.7" width="0.125" layer="51"/>
+<wire x1="1.2" y1="0.7" x2="2.5" y2="0.7" width="0.125" layer="51"/>
+<wire x1="2.5" y1="-0.7" x2="1.2" y2="-0.7" width="0.125" layer="51"/>
+<wire x1="1.2" y1="-0.7" x2="1.2" y2="-1.6" width="0.125" layer="51"/>
+<wire x1="-1.2" y1="-1.6" x2="-1.2" y2="-0.7" width="0.125" layer="51"/>
+<wire x1="-1.2" y1="-0.7" x2="-2.5" y2="-0.7" width="0.125" layer="51"/>
+<polygon width="0.125" layer="51">
+<vertex x="-2.5" y="-0.7"/>
+<vertex x="-2.5" y="-1.4" curve="-90"/>
+<vertex x="-2.3" y="-1.6"/>
+<vertex x="-1.2" y="-1.6"/>
+<vertex x="-1.2" y="-0.7"/>
+</polygon>
+<polygon width="0.125" layer="51">
+<vertex x="-2.5" y="1.4"/>
+<vertex x="-2.5" y="0.7"/>
+<vertex x="-1.4" y="0.7"/>
+<vertex x="-1.2" y="0.9"/>
+<vertex x="-1.2" y="1.6"/>
+<vertex x="-2.3" y="1.6" curve="-90"/>
+</polygon>
+<polygon width="0.125" layer="51">
+<vertex x="1.2" y="1.6"/>
+<vertex x="1.2" y="0.7"/>
+<vertex x="2.5" y="0.7"/>
+<vertex x="2.5" y="1.4" curve="-90"/>
+<vertex x="2.3" y="1.6"/>
+</polygon>
+<polygon width="0.125" layer="51">
+<vertex x="1.2" y="-0.7"/>
+<vertex x="1.2" y="-1.6"/>
+<vertex x="2.3" y="-1.6" curve="-90"/>
+<vertex x="2.5" y="-1.4"/>
+<vertex x="2.5" y="-0.7"/>
+</polygon>
+</package>
+<package name="4-SMD-3.2X2.4">
+<description>&lt;p&gt;3.2x2.4 4-SMD, &lt;a href="http://www.txccrystal.com/images/pdf/7m.pdf"&gt;footprint&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="4" x="-1.1" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="3" x="1.1" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="1" x="-1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="2" x="1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<wire x1="-0.2" y1="1.4" x2="0.2" y2="1.4" width="0.125" layer="21"/>
+<wire x1="1.7" y1="0.1" x2="1.7" y2="-0.1" width="0.125" layer="21"/>
+<wire x1="-1.7" y1="0.1" x2="-1.7" y2="-0.1" width="0.125" layer="21"/>
+<wire x1="-0.2" y1="-1.4" x2="0.2" y2="-1.4" width="0.125" layer="21"/>
+<wire x1="-0.1" y1="0.2" x2="-0.1" y2="-0.2" width="0.0625" layer="51"/>
+<wire x1="-0.1" y1="-0.2" x2="0.1" y2="-0.2" width="0.0625" layer="51"/>
+<wire x1="0.1" y1="-0.2" x2="0.1" y2="0.2" width="0.0625" layer="51"/>
+<wire x1="0.1" y1="0.2" x2="-0.1" y2="0.2" width="0.0625" layer="51"/>
+<wire x1="-0.2" y1="0.2" x2="-0.2" y2="0" width="0.0625" layer="51"/>
+<wire x1="-0.2" y1="0" x2="-0.2" y2="-0.2" width="0.0625" layer="51"/>
+<wire x1="0.2" y1="0.2" x2="0.2" y2="0" width="0.0625" layer="51"/>
+<wire x1="0.2" y1="0" x2="0.2" y2="-0.2" width="0.0625" layer="51"/>
+<wire x1="-0.4" y1="-0.25" x2="-0.2" y2="0" width="0.0625" layer="51"/>
+<wire x1="0.4" y1="0.25" x2="0.2" y2="0" width="0.0625" layer="51"/>
+<text x="-2" y="-1.7" size="1" layer="25" font="vector" ratio="12" align="top-left">&gt;NAME</text>
+<text x="-2" y="1.7" size="1" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+<wire x1="-2" y1="1.6" x2="2" y2="1.6" width="0.125" layer="39"/>
+<wire x1="2" y1="1.6" x2="2" y2="-1.6" width="0.125" layer="39"/>
+<wire x1="-2" y1="-1.6" x2="-2" y2="1.6" width="0.125" layer="39"/>
+<wire x1="-2" y1="-1.6" x2="2" y2="-1.6" width="0.125" layer="39"/>
+<polygon width="0.125" layer="51">
+<vertex x="-1.6" y="0.4"/>
+<vertex x="-0.6" y="0.4"/>
+<vertex x="-0.6" y="1.25"/>
+<vertex x="-1.45" y="1.25" curve="-90"/>
+<vertex x="-1.6" y="1.1"/>
+</polygon>
+<polygon width="0.125" layer="51">
+<vertex x="-1.6" y="-0.4"/>
+<vertex x="-0.8" y="-0.4"/>
+<vertex x="-0.6" y="-0.6"/>
+<vertex x="-0.6" y="-1.25"/>
+<vertex x="-1.45" y="-1.25" curve="90"/>
+<vertex x="-1.6" y="-1.1"/>
+</polygon>
+<wire x1="-1.6" y1="0.4" x2="-1.6" y2="-0.4" width="0.125" layer="51"/>
+<polygon width="0.125" layer="51">
+<vertex x="0.6" y="1.25"/>
+<vertex x="0.6" y="0.4"/>
+<vertex x="1.6" y="0.4"/>
+<vertex x="1.6" y="1.1" curve="-90"/>
+<vertex x="1.45" y="1.25"/>
+</polygon>
+<polygon width="0.125" layer="51">
+<vertex x="0.6" y="-0.4"/>
+<vertex x="0.6" y="-1.25"/>
+<vertex x="1.45" y="-1.25" curve="-90"/>
+<vertex x="1.6" y="-1.1"/>
+<vertex x="1.6" y="-0.4"/>
+</polygon>
+<wire x1="-0.6" y1="-1.25" x2="0.6" y2="-1.25" width="0.125" layer="51"/>
+<wire x1="1.6" y1="-0.4" x2="1.6" y2="0.4" width="0.125" layer="51"/>
+<wire x1="-0.6" y1="1.25" x2="0.6" y2="1.25" width="0.125" layer="51"/>
 </package>
 </packages>
 <symbols>
+<symbol name="CRYSTAL">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="GND" x="0" y="-2.54" visible="off" length="point" direction="sup" swaplevel="1"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.524" width="0.1524" layer="94"/>
+<text x="0" y="2.54" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
+<text x="1.778" y="-2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="7?-*MAAJ-T" prefix="Y">
+<description>&lt;p&gt;TXC series of SMD crystals, 8-100 MHz&lt;/p&gt;
+&lt;p&gt;
+7B - 5x3.2 - &lt;a href="http://www.txccrystal.com/images/pdf/7b.pdf"&gt;Datasheet&lt;/a&gt;&lt;br/&gt;
+7M - 3.2x2.5 - &lt;a href="http://www.txccrystal.com/images/pdf/7m.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M" package="4-SMD-3.2X2.4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name="20.000">
+<attribute name="DESC" value="Crystal 20 MHz 18pF +/-30ppm 40 Ohm" constant="no"/>
+<attribute name="DIGIKEY_OC" value="887-1109-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.05 mm" constant="no"/>
+<attribute name="MFR" value="TXC Corporation" constant="no"/>
+<attribute name="MPN" value="7B-20.000MAAJ-T" constant="no"/>
+<attribute name="TEMP" value="-20C to 70C" constant="no"/>
+<attribute name="VALUE" value="20 MHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="B" package="4-SMD-5X3.2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name="20.000">
+<attribute name="DESC" value="Crystal 20 MHz 18pF +/-30ppm 60 Ohm" constant="no"/>
+<attribute name="DIGIKEY_OC" value="887-1129-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.80 mm" constant="no"/>
+<attribute name="MFR" value="TXC Corporation" constant="no"/>
+<attribute name="MPN" value="7M-20.000MAAJ-T" constant="no"/>
+<attribute name="TEMP" value="-20C to 70C" constant="no"/>
+<attribute name="VALUE" value="20 MHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
