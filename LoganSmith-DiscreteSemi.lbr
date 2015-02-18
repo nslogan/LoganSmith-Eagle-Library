@@ -1150,7 +1150,15 @@
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESC" value="General purpose diode 100V 150mA Vf 1V@50mA" constant="no"/>
+<attribute name="DIGIKEY_OC" value="CD1206-S01575CT-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.95mm" constant="no"/>
+<attribute name="MFR" value="Bourns Inc." constant="no"/>
+<attribute name="MPN" value="CD1206-S01575" constant="no"/>
+<attribute name="TEMP" value="-55C to 125C" constant="no"/>
+<attribute name="VALUE" value="100V 150ma" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
