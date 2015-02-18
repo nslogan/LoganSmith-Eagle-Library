@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -260,6 +260,43 @@
 <text x="0" y="4.4" size="0.5" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
 <circle x="-2.7" y="5.2" radius="0.2" width="0.125" layer="21"/>
 </package>
+<package name="TSSOP-8">
+<description>&lt;p&gt;TSSOP-8 Package based on &lt;a href="http://www.vishay.com/docs/72611/72611.pdf"&gt;footprint&lt;/a&gt; and &lt;a href="http://www.ti.com/lit/ml/mtss001d/mtss001d.pdf"&gt;package&lt;/a&gt;.&lt;/p&gt;</description>
+<smd name="1" x="-0.975" y="-2.82" dx="0.4" dy="1.1" layer="1"/>
+<smd name="2" x="-0.325" y="-2.82" dx="0.4" dy="1.1" layer="1"/>
+<smd name="3" x="0.325" y="-2.82" dx="0.4" dy="1.1" layer="1"/>
+<smd name="4" x="0.975" y="-2.82" dx="0.4" dy="1.1" layer="1"/>
+<smd name="8" x="-0.975" y="2.82" dx="0.4" dy="1.1" layer="1"/>
+<smd name="7" x="-0.325" y="2.82" dx="0.4" dy="1.1" layer="1"/>
+<smd name="6" x="0.325" y="2.82" dx="0.4" dy="1.1" layer="1"/>
+<smd name="5" x="0.975" y="2.82" dx="0.4" dy="1.1" layer="1"/>
+<wire x1="-1.45" y1="2.25" x2="1.45" y2="2.25" width="0.1" layer="51"/>
+<wire x1="1.45" y1="2.25" x2="1.45" y2="-2.25" width="0.1" layer="51"/>
+<wire x1="1.45" y1="-2.25" x2="-1.45" y2="-2.25" width="0.1" layer="51"/>
+<wire x1="-1.45" y1="-2.25" x2="-1.45" y2="2.25" width="0.1" layer="51"/>
+<rectangle x1="-1.125" y1="2.275" x2="-0.825" y2="3.3" layer="51"/>
+<rectangle x1="-0.475" y1="2.275" x2="-0.175" y2="3.3" layer="51"/>
+<rectangle x1="0.175" y1="2.275" x2="0.475" y2="3.3" layer="51"/>
+<rectangle x1="0.825" y1="2.275" x2="1.125" y2="3.3" layer="51"/>
+<rectangle x1="-1.125" y1="-3.3" x2="-0.825" y2="-2.27" layer="51"/>
+<rectangle x1="-0.475" y1="-3.3" x2="-0.175" y2="-2.27" layer="51"/>
+<rectangle x1="0.175" y1="-3.3" x2="0.475" y2="-2.27" layer="51"/>
+<rectangle x1="0.825" y1="-3.3" x2="1.125" y2="-2.27" layer="51"/>
+<wire x1="-1.4" y1="2.4" x2="-1.6" y2="2.4" width="0.125" layer="21"/>
+<wire x1="-1.6" y1="2.4" x2="-1.6" y2="-2.4" width="0.125" layer="21"/>
+<wire x1="-1.6" y1="-2.4" x2="-1.4" y2="-2.4" width="0.125" layer="21"/>
+<wire x1="1.4" y1="-2.4" x2="1.6" y2="-2.4" width="0.125" layer="21"/>
+<wire x1="1.6" y1="-2.4" x2="1.6" y2="2.4" width="0.125" layer="21"/>
+<wire x1="1.6" y1="2.4" x2="1.4" y2="2.4" width="0.125" layer="21"/>
+<circle x="-1" y="-1.7" radius="0.14141875" width="0.125" layer="21"/>
+<circle x="-1.6" y="-2.9" radius="0.14141875" width="0.125" layer="21"/>
+<text x="1.8" y="-2.4" size="1" layer="25" font="vector" ratio="12" rot="R90" align="top-left">&gt;NAME</text>
+<text x="0" y="0" size="0.5" layer="27" font="vector" ratio="12" rot="R90" align="center">&gt;VALUE</text>
+<wire x1="-1.8" y1="-3.5" x2="1.8" y2="-3.5" width="0.125" layer="39"/>
+<wire x1="1.8" y1="-3.5" x2="1.8" y2="3.5" width="0.125" layer="39"/>
+<wire x1="1.8" y1="3.5" x2="-1.8" y2="3.5" width="0.125" layer="39"/>
+<wire x1="-1.8" y1="3.5" x2="-1.8" y2="-3.5" width="0.125" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FT230XQ">
@@ -347,6 +384,23 @@ storage register.&lt;/p&gt;</description>
 <wire x1="-7.62" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TPS2113A">
+<description>TI TPS2113A, applicable to TPS2112A and TPS2113A</description>
+<pin name="STAT" x="-12.7" y="5.08" length="middle"/>
+<pin name="!EN" x="-12.7" y="2.54" length="middle" function="dot"/>
+<pin name="VSNS" x="-12.7" y="0" length="middle"/>
+<pin name="ILIM" x="-12.7" y="-2.54" length="middle"/>
+<pin name="IN1" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="IN2" x="15.24" y="0" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-5.842" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -465,6 +519,44 @@ storage register.&lt;/p&gt;</description>
 <attribute name="MFR" value="Texas Instruments" constant="no"/>
 <attribute name="MPN" value="SN74HC595DR" constant="no"/>
 <attribute name="TEMP" value="-40C to 85C" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS2112/3A-" prefix="U">
+<description>&lt;p&gt;2-input power MUX, &lt;a href="http://www.ti.com/lit/ds/symlink/tps2112a.pdf"&gt;datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS2113A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-8">
+<connects>
+<connect gate="G$1" pin="!EN" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="ILIM" pad="4"/>
+<connect gate="G$1" pin="IN1" pad="8"/>
+<connect gate="G$1" pin="IN2" pad="6"/>
+<connect gate="G$1" pin="OUT" pad="7"/>
+<connect gate="G$1" pin="STAT" pad="1"/>
+<connect gate="G$1" pin="VSNS" pad="3"/>
+</connects>
+<technologies>
+<technology name="2">
+<attribute name="DESC" value="2-input power MUX Vin 2.8V-5.5V 750mA" constant="no"/>
+<attribute name="DIGIKEY_OC" value="296-34595-5-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.2mm" constant="no"/>
+<attribute name="MFR" value="Texas Instruments" constant="no"/>
+<attribute name="MPN" value="TPS2112APW" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+</technology>
+<technology name="3">
+<attribute name="DESC" value="" constant="no"/>
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="HEIGHT" value="" constant="no"/>
+<attribute name="MFR" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="TEMP" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
