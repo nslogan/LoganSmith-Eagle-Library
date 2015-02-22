@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -134,8 +134,8 @@
 <circle x="0" y="0" radius="1.15" width="2.3" layer="40"/>
 <pad name="P$1" x="0" y="0" drill="2.2" diameter="4.1"/>
 </package>
-<package name="TP_THRU_CIRC">
-<pad name="TP" x="0" y="0" drill="1.016" diameter="1.778" shape="square"/>
+<package name="TP_THRU-0.04_CIRC">
+<pad name="TP" x="0" y="0" drill="1.016" diameter="1.778"/>
 <text x="0" y="2.032" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="-1.905" y="0" size="0.508" layer="27" font="vector" ratio="12" align="center-right">&gt;VALUE</text>
 <circle x="0" y="0" radius="1.524" width="0.125" layer="21"/>
@@ -232,6 +232,18 @@
 <text x="-3.4" y="3.4" size="1" layer="25" font="vector" ratio="12">&gt;NAME</text>
 <text x="0" y="-2.4" size="0.5" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
 </package>
+<package name="TP_THRU-0.063_CIRC">
+<pad name="TP" x="0" y="0" drill="1.6002" diameter="2.54"/>
+<text x="0" y="2.032" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="-2.032" y="0" size="0.508" layer="27" font="vector" ratio="12" align="center-right">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.778" width="0.125" layer="21"/>
+<text x="0" y="-2.032" size="1.25" layer="21" font="vector" ratio="12" align="top-center">&gt;TP_SIG_NAME</text>
+<text x="2.032" y="0" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-right">&gt;TP_COLOR</text>
+<wire x1="-1.778" y1="-1.778" x2="1.778" y2="-1.778" width="0.127" layer="39"/>
+<wire x1="1.778" y1="-1.778" x2="1.778" y2="1.778" width="0.127" layer="39"/>
+<wire x1="1.778" y1="1.778" x2="-1.778" y2="1.778" width="0.127" layer="39"/>
+<wire x1="-1.778" y1="1.778" x2="-1.778" y2="-1.778" width="0.127" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MNTHOLE">
@@ -286,37 +298,37 @@
 <gate name="G$1" symbol="TP" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="THRU" package="TP_THRU_CIRC">
+<device name="THRU-0.04" package="TP_THRU-0.04_CIRC">
 <connects>
 <connect gate="G$1" pin="TP" pad="TP"/>
 </connects>
 <technologies>
-<technology name="-B">
+<technology name="-BK">
 <attribute name="DIGIKEY_OC" value="" constant="no"/>
 <attribute name="MFR" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
-<attribute name="TP_COLOR" value="B" constant="no"/>
+<attribute name="TP_COLOR" value="BK" constant="no"/>
 <attribute name="TP_SIG_NAME" value="" constant="no"/>
 </technology>
-<technology name="-R">
+<technology name="-RD">
 <attribute name="DIGIKEY_OC" value="" constant="no"/>
 <attribute name="MFR" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
-<attribute name="TP_COLOR" value="R" constant="no"/>
+<attribute name="TP_COLOR" value="RD" constant="no"/>
 <attribute name="TP_SIG_NAME" value="" constant="no"/>
 </technology>
-<technology name="-W">
+<technology name="-WT">
 <attribute name="DIGIKEY_OC" value="" constant="no"/>
 <attribute name="MFR" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
-<attribute name="TP_COLOR" value="W" constant="no"/>
+<attribute name="TP_COLOR" value="WT" constant="no"/>
 <attribute name="TP_SIG_NAME" value="" constant="no"/>
 </technology>
-<technology name="-Y">
+<technology name="-YE">
 <attribute name="DIGIKEY_OC" value="" constant="no"/>
 <attribute name="MFR" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
-<attribute name="TP_COLOR" value="Y" constant="no"/>
+<attribute name="TP_COLOR" value="YE" constant="no"/>
 <attribute name="TP_SIG_NAME" value="" constant="no"/>
 </technology>
 </technologies>
@@ -327,6 +339,53 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="THRU-0.063" package="TP_THRU-0.063_CIRC">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="-BK">
+<attribute name="DESC" value="" constant="no"/>
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="HEIGHT" value="" constant="no"/>
+<attribute name="MFR" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="TEMP" value="" constant="no"/>
+<attribute name="TP_COLOR" value="BK" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="-RD">
+<attribute name="DESC" value="" constant="no"/>
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="HEIGHT" value="" constant="no"/>
+<attribute name="MFR" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="TEMP" value="" constant="no"/>
+<attribute name="TP_COLOR" value="RD" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="-WT">
+<attribute name="DESC" value="" constant="no"/>
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="HEIGHT" value="" constant="no"/>
+<attribute name="MFR" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="TEMP" value="" constant="no"/>
+<attribute name="TP_COLOR" value="WT" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="-YE">
+<attribute name="DESC" value="" constant="no"/>
+<attribute name="DIGIKEY_OC" value="" constant="no"/>
+<attribute name="HEIGHT" value="" constant="no"/>
+<attribute name="MFR" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="TEMP" value="" constant="no"/>
+<attribute name="TP_COLOR" value="YE" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
