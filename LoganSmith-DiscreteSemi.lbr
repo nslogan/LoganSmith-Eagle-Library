@@ -1163,6 +1163,31 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="1N5819HW" prefix="D">
+<description>&lt;p&gt;40V, 1A Schottky diode, &lt;a href="http://www.diodes.com/datasheets/ds30217.pdf"&gt;datasheet&lt;a/&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESC" value="Schottky 40V 1A Vf 450mV &lt;500ns recovery" constant="no"/>
+<attribute name="DIGIKEY_OC" value="1N5819HW-FDICT-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.45mm" constant="no"/>
+<attribute name="MFR" value="Diodes Incorporated" constant="no"/>
+<attribute name="MPN" value="1N5819HW-7-F" constant="no"/>
+<attribute name="TEMP" value="-65C to 125C" constant="no"/>
+<attribute name="VALUE" value="40V,1A" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
