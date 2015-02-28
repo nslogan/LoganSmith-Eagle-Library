@@ -137,9 +137,8 @@
 <package name="TP_THRU-0.04_CIRC">
 <pad name="TP" x="0" y="0" drill="1.016" diameter="1.778"/>
 <text x="0" y="2.032" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="-1.905" y="0" size="0.508" layer="27" font="vector" ratio="12" align="center-right">&gt;VALUE</text>
 <circle x="0" y="0" radius="1.524" width="0.125" layer="21"/>
-<text x="0" y="-1.905" size="1.25" layer="21" font="vector" ratio="12" align="top-center">&gt;TP_SIG_NAME</text>
+<text x="0" y="-1.905" size="1.25" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
 <text x="1.905" y="0" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-right">&gt;TP_COLOR</text>
 <wire x1="-1.778" y1="-1.778" x2="1.778" y2="-1.778" width="0.127" layer="39"/>
 <wire x1="1.778" y1="-1.778" x2="1.778" y2="1.778" width="0.127" layer="39"/>
@@ -149,8 +148,7 @@
 <package name="TP_THRU_SQ">
 <pad name="TP" x="0" y="0" drill="1.016" diameter="1.778" shape="square"/>
 <text x="0" y="1.524" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="-1.651" y="0" size="0.508" layer="25" font="vector" ratio="12" align="center-right">&gt;VALUE</text>
-<text x="0" y="-1.524" size="1.25" layer="21" font="vector" ratio="12" align="top-center">&gt;TP_SIG_NAME</text>
+<text x="0" y="-1.524" size="1.25" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
 <wire x1="-1.143" y1="-1.143" x2="1.143" y2="-1.143" width="0.127" layer="21"/>
 <wire x1="1.143" y1="-1.143" x2="1.143" y2="1.143" width="0.127" layer="21"/>
 <wire x1="1.143" y1="1.143" x2="-1.143" y2="1.143" width="0.127" layer="21"/>
@@ -235,9 +233,8 @@
 <package name="TP_THRU-0.063_CIRC">
 <pad name="TP" x="0" y="0" drill="1.6002" diameter="2.54"/>
 <text x="0" y="2.032" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="-2.032" y="0" size="0.508" layer="27" font="vector" ratio="12" align="center-right">&gt;VALUE</text>
 <circle x="0" y="0" radius="1.778" width="0.125" layer="21"/>
-<text x="0" y="-2.032" size="1.25" layer="21" font="vector" ratio="12" align="top-center">&gt;TP_SIG_NAME</text>
+<text x="0" y="-2.032" size="1.25" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
 <text x="2.032" y="0" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-right">&gt;TP_COLOR</text>
 <wire x1="-1.778" y1="-1.778" x2="1.778" y2="-1.778" width="0.127" layer="39"/>
 <wire x1="1.778" y1="-1.778" x2="1.778" y2="1.778" width="0.127" layer="39"/>
@@ -293,43 +290,55 @@
 </devices>
 </deviceset>
 <deviceset name="TP-?*" prefix="TP">
-<description>Test points</description>
+<description>&lt;p&gt;PC test points from Keystone, &lt;a href="http://datasheet.octopart.com/5001-Keystone-datasheet-7268890.pdf"&gt;datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TP" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="THRU-0.04" package="TP_THRU-0.04_CIRC">
+<device name="0.04D-MINI" package="TP_THRU-0.04_CIRC">
 <connects>
 <connect gate="G$1" pin="TP" pad="TP"/>
 </connects>
 <technologies>
 <technology name="-BK">
-<attribute name="DIGIKEY_OC" value="" constant="no"/>
-<attribute name="MFR" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DESC" value="PC Test Point Miniature 0.04&quot;D Black" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5001K-ND" constant="no"/>
+<attribute name="HEIGHT" value="4.6mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5001" constant="no"/>
 <attribute name="TP_COLOR" value="BK" constant="no"/>
-<attribute name="TP_SIG_NAME" value="" constant="no"/>
+</technology>
+<technology name="-OG">
+<attribute name="DESC" value="PC Test Point Miniature 0.04&quot;D Orange" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5003K-ND" constant="no"/>
+<attribute name="HEIGHT" value="4.6mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5003" constant="no"/>
+<attribute name="TP_COLOR" value="OG" constant="no"/>
 </technology>
 <technology name="-RD">
-<attribute name="DIGIKEY_OC" value="" constant="no"/>
-<attribute name="MFR" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DESC" value="PC Test Point Miniature 0.04&quot;D Red" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5000K-ND" constant="no"/>
+<attribute name="HEIGHT" value="4.6mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5000" constant="no"/>
 <attribute name="TP_COLOR" value="RD" constant="no"/>
-<attribute name="TP_SIG_NAME" value="" constant="no"/>
 </technology>
 <technology name="-WT">
-<attribute name="DIGIKEY_OC" value="" constant="no"/>
-<attribute name="MFR" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DESC" value="PC Test Point Miniature 0.04&quot;D White" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5002K-ND" constant="no"/>
+<attribute name="HEIGHT" value="4.6mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5002" constant="no"/>
 <attribute name="TP_COLOR" value="WT" constant="no"/>
-<attribute name="TP_SIG_NAME" value="" constant="no"/>
 </technology>
 <technology name="-YE">
-<attribute name="DIGIKEY_OC" value="" constant="no"/>
-<attribute name="MFR" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DESC" value="PC Test Point Miniature 0.04&quot;D Yellow" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5004K-ND" constant="no"/>
+<attribute name="HEIGHT" value="4.6mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5004" constant="no"/>
 <attribute name="TP_COLOR" value="YE" constant="no"/>
-<attribute name="TP_SIG_NAME" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -341,50 +350,97 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="THRU-0.063" package="TP_THRU-0.063_CIRC">
+<device name="0.063D-CMPCT" package="TP_THRU-0.063_CIRC">
 <connects>
 <connect gate="G$1" pin="TP" pad="TP"/>
 </connects>
 <technologies>
 <technology name="-BK">
-<attribute name="DESC" value="" constant="no"/>
-<attribute name="DIGIKEY_OC" value="" constant="no"/>
-<attribute name="HEIGHT" value="" constant="no"/>
-<attribute name="MFR" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="TEMP" value="" constant="no"/>
+<attribute name="DESC" value="PC Test Point Compact 0.063&quot;D Black" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5006K-ND" constant="no"/>
+<attribute name="HEIGHT" value="5.6mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5006" constant="no"/>
 <attribute name="TP_COLOR" value="BK" constant="no"/>
-<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="-OG">
+<attribute name="DESC" value="PC Test Point Compact 0.063&quot;D Orange" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5008K-ND" constant="no"/>
+<attribute name="HEIGHT" value="5.6mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5008" constant="no"/>
+<attribute name="TP_COLOR" value="OG" constant="no"/>
 </technology>
 <technology name="-RD">
-<attribute name="DESC" value="" constant="no"/>
-<attribute name="DIGIKEY_OC" value="" constant="no"/>
-<attribute name="HEIGHT" value="" constant="no"/>
-<attribute name="MFR" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="TEMP" value="" constant="no"/>
+<attribute name="DESC" value="PC Test Point Compact 0.063&quot;D Red" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5005K-ND" constant="no"/>
+<attribute name="HEIGHT" value="5.6mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5005" constant="no"/>
 <attribute name="TP_COLOR" value="RD" constant="no"/>
-<attribute name="VALUE" value="" constant="no"/>
 </technology>
 <technology name="-WT">
-<attribute name="DESC" value="" constant="no"/>
-<attribute name="DIGIKEY_OC" value="" constant="no"/>
-<attribute name="HEIGHT" value="" constant="no"/>
-<attribute name="MFR" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="TEMP" value="" constant="no"/>
+<attribute name="DESC" value="PC Test Point Compact 0.063&quot;D White" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5007K-ND" constant="no"/>
+<attribute name="HEIGHT" value="5.6mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5007" constant="no"/>
 <attribute name="TP_COLOR" value="WT" constant="no"/>
-<attribute name="VALUE" value="" constant="no"/>
 </technology>
 <technology name="-YE">
-<attribute name="DESC" value="" constant="no"/>
-<attribute name="DIGIKEY_OC" value="" constant="no"/>
-<attribute name="HEIGHT" value="" constant="no"/>
-<attribute name="MFR" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="TEMP" value="" constant="no"/>
+<attribute name="DESC" value="PC Test Point Compact 0.063&quot;D Yellow" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5009K-ND" constant="no"/>
+<attribute name="HEIGHT" value="5.6mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5009" constant="no"/>
 <attribute name="TP_COLOR" value="YE" constant="no"/>
-<attribute name="VALUE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0.063D-MULTI" package="TP_THRU-0.063_CIRC">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="-BK">
+<attribute name="DESC" value="PC Test Point Multipurpose 0.063&quot;D Black" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5011K-ND" constant="no"/>
+<attribute name="HEIGHT" value="8.1mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5011" constant="no"/>
+<attribute name="TP_COLOR" value="BK" constant="no"/>
+</technology>
+<technology name="-OG">
+<attribute name="DESC" value="PC Test Point Multipurpose 0.063&quot;D Orange" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5013K-ND" constant="no"/>
+<attribute name="HEIGHT" value="8.1mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5013" constant="no"/>
+<attribute name="TP_COLOR" value="OG" constant="no"/>
+</technology>
+<technology name="-RD">
+<attribute name="DESC" value="PC Test Point Multipurpose 0.063&quot;D Red" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5010K-ND" constant="no"/>
+<attribute name="HEIGHT" value="8.1mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5010" constant="no"/>
+<attribute name="TP_COLOR" value="RD" constant="no"/>
+</technology>
+<technology name="-WT">
+<attribute name="DESC" value="PC Test Point Multipurpose 0.063&quot;D White" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5012K-ND" constant="no"/>
+<attribute name="HEIGHT" value="8.1mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5012" constant="no"/>
+<attribute name="TP_COLOR" value="WT" constant="no"/>
+</technology>
+<technology name="-YE">
+<attribute name="DESC" value="PC Test Point Multipurpose 0.063&quot;D Yellow" constant="no"/>
+<attribute name="DIGIKEY_OC" value="5014K-ND" constant="no"/>
+<attribute name="HEIGHT" value="8.1mm" constant="no"/>
+<attribute name="MFR" value="Keystone Electronics" constant="no"/>
+<attribute name="MPN" value="5014" constant="no"/>
+<attribute name="TP_COLOR" value="YE" constant="no"/>
 </technology>
 </technologies>
 </device>

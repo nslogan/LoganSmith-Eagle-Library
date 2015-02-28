@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -380,6 +380,150 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HSM*-C?" prefix="D">
+<description>&lt;p&gt;Diffused LEDs from Avago Technologies:&lt;br/&gt;
+&lt;a href="http://www.avagotech.com/docs/AV02-0551EN"&gt;HSMz-Czzz&lt;/a&gt; (will download PDF)&lt;br/&gt;
+&lt;a href="http://www.avagotech.com/docs/AV02-0977EN"&gt;HSMQ/HSMR-C1xx, C2xx&lt;/a&gt; (will download PDF)&lt;br/&gt;
+&lt;a href="http://www.avagotech.com/docs/AV02-0592EN"&gt;HSMM/MN-C1xx&lt;/a&gt; (will download PDF)&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="190" package="0603-LED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="G">
+<attribute name="DESC" value="Green diffused LED Vf 2.2V 20mA 170deg 570nm 15mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1425-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMG-C190" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="GRN" constant="no"/>
+</technology>
+<technology name="R">
+<attribute name="DESC" value="Blue diffused LED Vf 3.4V 20mA 155deg 469nm 55mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-2502-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMR-C190" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="BLU" constant="no"/>
+</technology>
+<technology name="S">
+<attribute name="DESC" value="Red diffused LED Vf 2.1V 20mA 170deg 630nm 10mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1422-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMS-C190" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+<technology name="Y">
+<attribute name="DESC" value="Yellow diffused LED Vf 2.1V 20mA 170deg 589nm 8mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1424-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMY-C190" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="YEL" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="170" package="0805-LED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="G">
+<attribute name="DESC" value="Green diffused LED Vf 2.2V 20mA 170deg 570nm 15mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1434-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMG-C170" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="GRN" constant="no"/>
+</technology>
+<technology name="N">
+<attribute name="DESC" value="Blue diffused LED Vf 3.3V 20mA 170deg 468nm 35mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1437-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMN-C170" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="BLU" constant="no"/>
+</technology>
+<technology name="S">
+<attribute name="DESC" value="Red diffused LED Vf 2.1V 20mA 170deg 630nm 10mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1429-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMS-C170" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+<technology name="Y">
+<attribute name="DESC" value="Yellow diffused LED Vf 2.1V 20mA 170deg 589nm 8mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1433-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMY-C170" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="YEL" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="150" package="1206-LED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="G">
+<attribute name="DESC" value="Green diffused LED Vf 2.2V 20mA 170deg 570nm 15mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1443-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMG-C150" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="GRN" constant="no"/>
+</technology>
+<technology name="N">
+<attribute name="DESC" value="Blue diffused LED Vf 3.3V 20mA 170deg 468nm 35mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1446-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMN-C150" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="BLU" constant="no"/>
+</technology>
+<technology name="S">
+<attribute name="DESC" value="Red diffused LED Vf 2.1V 20mA 170deg 630nm 10mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1440-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMS-C150" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+<technology name="Y">
+<attribute name="DESC" value="Yellow diffused LED Vf 2.1V 20mA 170deg 589nm 8mcd" constant="no"/>
+<attribute name="DIGIKEY_OC" value="516-1442-1-ND" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MFR" value="Avago Technologies US Inc." constant="no"/>
+<attribute name="MPN" value="HSMY-C150" constant="no"/>
+<attribute name="TEMP" value="-40C to 85C" constant="no"/>
+<attribute name="VALUE" value="YEL" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

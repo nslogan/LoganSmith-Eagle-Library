@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1310,6 +1310,9 @@
 </devices>
 </deviceset>
 <deviceset name="USB-" prefix="J">
+<description>&lt;p&gt;Various types of USB:&lt;br/&gt;
+Mini USB B: &lt;a href="http://www.molex.com/pdm_docs/sd/675031020_sd.pdf"&gt;datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="USB-MINI-B" x="10.16" y="2.54"/>
 </gates>
@@ -1324,7 +1327,13 @@
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESC" value="Mini USB B female shielded RA 5pos" constant="no"/>
+<attribute name="DIGKEY_OC" value="WM5461CT-ND" constant="no"/>
+<attribute name="HEIGHT" value="3.95mm" constant="no"/>
+<attribute name="MFR" value="Molex Inc" constant="no"/>
+<attribute name="MPN" value="0675031020" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
