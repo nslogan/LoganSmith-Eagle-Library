@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -192,6 +192,45 @@
 <wire x1="1.5" y1="1" x2="-1.5" y2="1" width="0.125" layer="39"/>
 <rectangle x1="-0.2" y1="-0.4" x2="0.2" y2="0.4" layer="35"/>
 </package>
+<package name="PANASONIC_D">
+<description>&lt;p&gt;Panasonic Aluminum Electrolytic Capacitors, size D&lt;br/&gt;
+See [Table of Board Land Size vs. Capacitor Size] and associated figure to left for &lt;a href="http://industrial.panasonic.com/lecs/www-data/pdf/ABA0000/ABA0000PE251.pdf"&gt;footprint&lt;/a&gt;&lt;br/&gt;
+See "Dimensions in mm (not to scale)" and associated figure for &lt;a href="http://industrial.panasonic.com/lecs/www-data/pdf/ABA0000/ABA0000CE120.pdf"&gt;size/shape&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="-" x="-2.5" y="0" dx="3.2" dy="1.6" layer="1" rot="R180"/>
+<smd name="+" x="2.5" y="0" dx="3.2" dy="1.6" layer="1" rot="R180"/>
+<wire x1="-3.3" y1="-3.3" x2="-3.3" y2="3.3" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="3.3" x2="1.65" y2="3.3" width="0.1" layer="51"/>
+<wire x1="1.65" y1="3.3" x2="3.3" y2="1.65" width="0.1" layer="51"/>
+<wire x1="3.3" y1="1.65" x2="3.3" y2="-1.65" width="0.1" layer="51"/>
+<wire x1="3.3" y1="-1.65" x2="1.65" y2="-3.3" width="0.1" layer="51"/>
+<wire x1="1.65" y1="-3.3" x2="-3.3" y2="-3.3" width="0.1" layer="51"/>
+<rectangle x1="1.875" y1="-1.3" x2="2.525" y2="1.3" layer="51" rot="R90"/>
+<rectangle x1="-2.525" y1="-1.3" x2="-1.875" y2="1.3" layer="51" rot="R270"/>
+<circle x="0" y="0" radius="3.15" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="-2.7" x2="-1.6" y2="2.7" width="0.1" layer="51"/>
+<wire x1="-3.4" y1="-1.1" x2="-3.4" y2="-3.4" width="0.125" layer="21"/>
+<wire x1="-3.4" y1="-3.4" x2="1.7" y2="-3.4" width="0.125" layer="21"/>
+<wire x1="1.7" y1="-3.4" x2="3.4" y2="-1.7" width="0.125" layer="21"/>
+<wire x1="3.4" y1="-1.7" x2="3.4" y2="-1.1" width="0.125" layer="21"/>
+<wire x1="-3.4" y1="1" x2="-3.4" y2="3.4" width="0.125" layer="21"/>
+<wire x1="-3.4" y1="3.4" x2="1.7" y2="3.4" width="0.125" layer="21"/>
+<wire x1="1.7" y1="3.4" x2="3.4" y2="1.7" width="0.125" layer="21"/>
+<wire x1="3.4" y1="1.7" x2="3.4" y2="1.1" width="0.125" layer="21"/>
+<text x="-2.1" y="-3.7" size="0.25" layer="51" font="vector" align="center">Panasonic, D</text>
+<text x="-3.4" y="3.6" size="1" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="0.3" y="1.9" size="0.5" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<polygon width="0.1" layer="51">
+<vertex x="-1.6" y="-2.7"/>
+<vertex x="-1.6" y="2.7"/>
+<vertex x="-2.4" y="2"/>
+<vertex x="-2.9" y="1.2"/>
+<vertex x="-3.1" y="0.3"/>
+<vertex x="-3.1" y="0"/>
+<vertex x="-3" y="-0.8"/>
+<vertex x="-2.7" y="-1.5"/>
+<vertex x="-2.1" y="-2.3"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -203,6 +242,18 @@
 <rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="CAP_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -495,6 +546,33 @@
 <attribute name="THICK" value="2.70mm" constant="no"/>
 <attribute name="TOL" value="+/-10%" constant="no"/>
 <attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="100UF-*-?-POL">
+<description>&lt;p&gt;100uF polarized capacitor:&lt;br/&gt;
+Panasonic FK V Series &lt;a href="http://industrial.panasonic.com/lecs/www-data/pdf/ABA0000/ABA0000CE120.pdf"&gt;datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PD" package="PANASONIC_D">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="35V">
+<attribute name="DESC" value="100uF 35V 20% aluminum 2000Hr@105C 340mOhm FK series" constant="no"/>
+<attribute name="DIGIKEY_OC" value="PCE3836CT-ND" constant="no"/>
+<attribute name="HEIGHT" value="7.7mm" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="EEE-FK1V101XP" constant="no"/>
+<attribute name="TEMP" value="-55C to 105C" constant="no"/>
+<attribute name="VALUE" value="100uF" constant="no"/>
 </technology>
 </technologies>
 </device>
