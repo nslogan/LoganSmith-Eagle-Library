@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -129,10 +129,6 @@
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-<wire x1="-1.8" y1="-2.1" x2="1.8" y2="-2.1" width="0.125" layer="39"/>
-<wire x1="1.8" y1="-2.1" x2="1.8" y2="2.1" width="0.125" layer="39"/>
-<wire x1="1.8" y1="2.1" x2="-1.8" y2="2.1" width="0.125" layer="39"/>
-<wire x1="-1.8" y1="2.1" x2="-1.8" y2="-2.1" width="0.125" layer="39"/>
 <wire x1="-1.4" y1="0.7" x2="-0.8" y2="0.7" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
 <wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.2" width="0.127" layer="21"/>
@@ -143,6 +139,7 @@
 <wire x1="-1.4" y1="-0.7" x2="-0.3" y2="-0.7" width="0.127" layer="51"/>
 <wire x1="1.4" y1="-0.2" x2="1.4" y2="-0.7" width="0.127" layer="51"/>
 <wire x1="1.4" y1="-0.7" x2="0.3" y2="-0.7" width="0.127" layer="51"/>
+<rectangle x1="-1.8" y1="-2.1" x2="1.8" y2="2.1" layer="39"/>
 </package>
 <package name="4-SMD">
 <description>4-SMD</description>
@@ -161,12 +158,9 @@
 <rectangle x1="1.99" y1="7.8" x2="3.09" y2="9.73" layer="51"/>
 <text x="3" y="1.8" size="1" layer="27" font="vector" ratio="12" rot="R90">&gt;VALUE</text>
 <text x="5.2" y="1.2" size="1" layer="25" font="vector" ratio="12" rot="R90">&gt;NAME</text>
-<wire x1="-1.6" y1="-1.1" x2="4.1" y2="-1.1" width="0.125" layer="39"/>
-<wire x1="4.1" y1="-1.1" x2="4.1" y2="10.1" width="0.125" layer="39"/>
-<wire x1="4.1" y1="10.1" x2="-1.6" y2="10.1" width="0.125" layer="39"/>
-<wire x1="-1.6" y1="10.1" x2="-1.6" y2="-1.1" width="0.125" layer="39"/>
 <circle x="-0.6" y="2" radius="0.282840625" width="0.125" layer="21"/>
 <circle x="-1.4" y="0.6" radius="0.282840625" width="0.125" layer="21"/>
+<rectangle x1="-1.6" y1="-1.1" x2="4.1" y2="10.1" layer="39"/>
 </package>
 <package name="SMA-DIODE">
 <description>&lt;p&gt;DO-214AC, SMA Diode&lt;/p&gt;
@@ -189,12 +183,9 @@
 <rectangle x1="1.6" y1="-1.4375" x2="1.9" y2="1.4375" layer="51"/>
 <text x="-2.3" y="1.8" size="1" layer="25" font="vector" ratio="12">&gt;NAME</text>
 <text x="-2.3" y="-2.2" size="0.5" layer="27" font="vector" ratio="12">&gt;VALUE</text>
-<wire x1="-3.5" y1="1.75" x2="-3.5" y2="-1.75" width="0.125" layer="39"/>
-<wire x1="-3.5" y1="-1.75" x2="3.5" y2="-1.75" width="0.125" layer="39"/>
-<wire x1="3.5" y1="-1.75" x2="3.5" y2="1.75" width="0.125" layer="39"/>
-<wire x1="3.5" y1="1.75" x2="-3.5" y2="1.75" width="0.125" layer="39"/>
 <rectangle x1="2.3" y1="-0.8" x2="2.8" y2="0.8" layer="51"/>
 <rectangle x1="-2.8" y1="-0.8" x2="-2.3" y2="0.8" layer="51"/>
+<rectangle x1="-3.5" y1="-1.8" x2="3.5" y2="1.8" layer="39"/>
 </package>
 <package name="SMC-DIODE">
 <description>&lt;p&gt;DO-214AB, SMC Diode&lt;/p&gt;
@@ -217,12 +208,9 @@
 <wire x1="3.6" y1="3.1" x2="3.6" y2="2" width="0.125" layer="21"/>
 <wire x1="-3.6" y1="-3.1" x2="-3.6" y2="-2" width="0.125" layer="21"/>
 <wire x1="3.6" y1="-3.1" x2="3.6" y2="-2" width="0.125" layer="21"/>
-<wire x1="-5" y1="3.5" x2="-5" y2="-3.5" width="0.125" layer="39"/>
-<wire x1="-5" y1="-3.5" x2="5" y2="-3.5" width="0.125" layer="39"/>
-<wire x1="5" y1="-3.5" x2="5" y2="3.5" width="0.125" layer="39"/>
-<wire x1="5" y1="3.5" x2="-5" y2="3.5" width="0.125" layer="39"/>
 <rectangle x1="3.6" y1="-1.55" x2="4.05" y2="1.55" layer="51"/>
 <rectangle x1="-4.05" y1="-1.55" x2="-3.6" y2="1.55" layer="51"/>
+<rectangle x1="-5" y1="-3.4" x2="5" y2="3.4" layer="39"/>
 </package>
 <package name="SOD-323">
 <description>&lt;p&gt;SC-76, SOD-323&lt;/p&gt;
@@ -249,10 +237,7 @@
 <wire x1="0.6" y1="0" x2="0.2" y2="0.4" width="0.125" layer="21"/>
 <wire x1="0.2" y1="0.4" x2="0.2" y2="-0.4" width="0.125" layer="21"/>
 <wire x1="0.2" y1="-0.4" x2="0.6" y2="0" width="0.125" layer="21"/>
-<wire x1="-1.9" y1="1" x2="-1.9" y2="-1" width="0.125" layer="39"/>
-<wire x1="-1.9" y1="-1" x2="1.9" y2="-1" width="0.125" layer="39"/>
-<wire x1="1.9" y1="-1" x2="1.9" y2="1" width="0.125" layer="39"/>
-<wire x1="1.9" y1="1" x2="-1.9" y2="1" width="0.125" layer="39"/>
+<rectangle x1="-1.9" y1="-1" x2="1.9" y2="1" layer="39"/>
 </package>
 <package name="SOD-123">
 <description>&lt;p&gt;SOD-123&lt;/p&gt;
@@ -277,12 +262,9 @@
 <wire x1="0.9" y1="0" x2="0.3" y2="0.6" width="0.125" layer="21"/>
 <wire x1="0.3" y1="0.6" x2="0.3" y2="-0.6" width="0.125" layer="21"/>
 <wire x1="0.3" y1="-0.6" x2="0.9" y2="0" width="0.125" layer="21"/>
-<wire x1="-2.7" y1="1.2" x2="-2.7" y2="-1.2" width="0.125" layer="39"/>
-<wire x1="-2.7" y1="-1.2" x2="2.7" y2="-1.2" width="0.125" layer="39"/>
-<wire x1="2.7" y1="-1.2" x2="2.7" y2="1.2" width="0.125" layer="39"/>
-<wire x1="2.7" y1="1.2" x2="-2.7" y2="1.2" width="0.125" layer="39"/>
 <text x="0" y="1.2" size="1" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.1" size="0.5" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
+<rectangle x1="-2.7" y1="-1.2" x2="2.7" y2="1.2" layer="39"/>
 </package>
 <package name="8-SOIC">
 <description>&lt;p&gt;8-SOIC&lt;/p&gt;
@@ -413,10 +395,6 @@
 &lt;p&gt;Follows standard set in &lt;a href="http://www.tortai-tech.com/upload/download/2011102023233369053.pdf"&gt;IPC-SM-782&lt;/a&gt;, section 8.1 "Chip Resistors", sub-section 5.0 "Land Pattern Dimensions", Figure 3, RLP 103A.&lt;/p&gt;</description>
 <text x="0" y="-1.1" size="1" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
 <text x="0" y="1.1" size="1" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<wire x1="-2.5" y1="1" x2="-2.5" y2="-1" width="0.125" layer="39"/>
-<wire x1="-2.5" y1="-1" x2="2.5" y2="-1" width="0.125" layer="39"/>
-<wire x1="2.5" y1="-1" x2="2.5" y2="1" width="0.125" layer="39"/>
-<wire x1="2.5" y1="1" x2="-2.5" y2="1" width="0.125" layer="39"/>
 <smd name="A" x="-1.4" y="0" dx="1.8" dy="1.6" layer="1" rot="R90"/>
 <smd name="C" x="1.4" y="0" dx="1.8" dy="1.6" layer="1" rot="R90"/>
 <wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.125" layer="21"/>
@@ -429,6 +407,7 @@
 <wire x1="-0.3" y1="0.6" x2="-0.3" y2="-0.6" width="0.125" layer="21"/>
 <wire x1="-0.3" y1="-0.6" x2="0.3" y2="0" width="0.125" layer="21"/>
 <wire x1="0.3" y1="0" x2="-0.3" y2="0.6" width="0.125" layer="21"/>
+<rectangle x1="-2.5" y1="-1" x2="2.5" y2="1" layer="39"/>
 </package>
 </packages>
 <symbols>
